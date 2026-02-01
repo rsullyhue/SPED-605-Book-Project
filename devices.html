@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Selection - AAC Parent Resource Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        nav {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            background-color: #667eea;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .content h2 {
+            color: #667eea;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .content h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .content p {
+            margin-bottom: 1rem;
+        }
+        
+        .content ul, .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .device-card {
+            background-color: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .device-card h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .pros {
+            background-color: #d4edda;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        .pros h4 {
+            color: #155724;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cons {
+            background-color: #f8d7da;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        .cons h4 {
+            color: #721c24;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tip-box {
+            background-color: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .tip-box h3 {
+            color: #1976D2;
+            margin-top: 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #667eea;
+            color: white;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AAC Device Selection</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="understanding.html">Understanding AAC</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li><a href="devices.html">Device Selection</a></li>
+            <li><a href="funding.html">Funding & Insurance</a></li>
+            <li><a href="implementation.html">Implementation</a></li>
+            <li><a href="schools.html">Working with Schools</a></li>
+            <li><a href="troubleshooting.html">Troubleshooting</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <h2>Choosing the Right AAC System</h2>
+            <p>There is no single "best" AAC device. The right choice depends on your child's individual needs, abilities, and communication goals. Most AAC users benefit from having multiple communication options for different situations.</p>
+            
+            <h2>Types of AAC Systems</h2>
+            
+            <div class="device-card">
+                <h3>Low-Tech AAC</h3>
+                <p>No batteries or electronics required. These are simple, portable, and durable options.</p>
+                <p><strong>Examples:</strong></p>
+                <ul>
+                    <li>Picture boards</li>
+                    <li>Communication books or binders</li>
+                    <li>Core word boards</li>
+                    <li>Visual schedules</li>
+                    <li>Choice boards</li>
+                </ul>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Inexpensive or free</li>
+                            <li>Always available (no charging needed)</li>
+                            <li>Easy to customize</li>
+                            <li>Durable</li>
+                            <li>No learning curve for partners</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Limited vocabulary</li>
+                            <li>No voice output</li>
+                            <li>Requires a communication partner</li>
+                            <li>Can be lost or damaged</li>
+                            <li>May be stigmatizing for older users</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p><strong>Best for:</strong> Early communicators, backup communication, specific routines or activities, situations where high-tech devices aren't practical</p>
+            </div>
+            
+            <div class="device-card">
+                <h3>Mid-Tech AAC</h3>
+                <p>Simple electronic devices with voice output, typically with limited vocabulary.</p>
+                <p><strong>Examples:</strong></p>
+                <ul>
+                    <li>Single-message devices (BIGmack, Step-by-Step)</li>
+                    <li>Simple multi-message devices (GoTalk, QuickTalker)</li>
+                    <li>Voice output communication aids (VOCAs)</li>
+                </ul>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Voice output increases independence</li>
+                            <li>Relatively affordable</li>
+                            <li>Durable</li>
+                            <li>Easy to program</li>
+                            <li>Simple to use</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Very limited vocabulary</li>
+                            <li>Not designed for complex language</li>
+                            <li>Requires frequent reprogramming</li>
+                            <li>May not grow with the child</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p><strong>Best for:</strong> Specific activities, early switch users, testing whether voice output is motivating, backup devices</p>
+            </div>
+            
+            <div class="device-card">
+                <h3>High-Tech AAC: Tablets with AAC Apps</h3>
+                <p>Consumer tablets (iPad, Android) with specialized AAC software.</p>
+                <p><strong>Popular AAC Apps:</strong></p>
+                <ul>
+                    <li><strong>Proloquo2Go:</strong> Symbol-based, customizable, works offline</li>
+                    <li><strong>TouchChat:</strong> Multiple vocabulary options (WordPower, UNITY), supports symbol and text</li>
+                    <li><strong>LAMP Words for Life:</strong> Motor planning approach, consistent motor patterns</li>
+                    <li><strong>Avaz:</strong> Picture-based, includes literacy support</li>
+                    <li><strong>CoughDrop:</strong> Free/low-cost, cloud-based, highly customizable</li>
+                    <li><strong>AssistiveWare Proloquo:</strong> Newer app with simplified interface</li>
+                </ul>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>More affordable than dedicated devices</li>
+                            <li>Multi-purpose (AAC + other apps)</li>
+                            <li>Socially acceptable (everyone has tablets)</li>
+                            <li>Easy to update and customize</li>
+                            <li>Large vocabulary capacity</li>
+                            <li>Can grow with the user</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Distractions from other apps/notifications</li>
+                            <li>Less durable than dedicated devices</li>
+                            <li>May not be covered by insurance</li>
+                            <li>Battery life varies</li>
+                            <li>Mounting/positioning can be challenging</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p><strong>Best for:</strong> Children learning AAC, families wanting flexibility, users who need multiple communication functions, situations where cost is a barrier</p>
+            </div>
+            
+            <div class="device-card">
+                <h3>High-Tech AAC: Dedicated Speech-Generating Devices (SGDs)</h3>
+                <p>Purpose-built devices designed specifically for communication.</p>
+                <p><strong>Popular Dedicated Devices:</strong></p>
+                <ul>
+                    <li><strong>Tobii Dynavox devices:</strong> I-Series, TD Pilot (eye gaze and touch options)</li>
+                    <li><strong>PRC devices:</strong> Accent, NOVA chat (run Unityand LAMP WFL)</li>
+                    <li><strong>Lingraphica:</strong> Designed for aphasia/stroke survivors</li>
+                    <li><strong>Saltillo:</strong> ChatFusion, TouchChat Express (similar to app versions)</li>
+                </ul>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Built for communication (no distractions)</li>
+                            <li>Extremely durable</li>
+                            <li>Often covered by insurance/Medicaid</li>
+                            <li>Amplified speakers for noisy environments</li>
+                            <li>Mounting solutions included</li>
+                            <li>Advanced access methods (eye gaze, switch scanning)</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Very expensive ($8,000-$15,000+)</li>
+                            <li>May draw unwanted attention</li>
+                            <li>Heavy and bulky</li>
+                            <li>Insurance process is lengthy</li>
+                            <li>Updates can be slow</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p><strong>Best for:</strong> Users who need specialized access methods, users in challenging environments (loud, outdoor), users who benefit from having a dedicated communication device, situations where insurance will cover the cost</p>
+            </div>
+            
+            <h2>Key Factors to Consider</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Questions to Ask</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Motor Skills</strong></td>
+                        <td>How does your child access items? Direct touch? Eye gaze? Switch? Head pointer?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vision</strong></td>
+                        <td>Can your child see small symbols? Do they need high contrast? Large icons?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hearing</strong></td>
+                        <td>Does your child rely on auditory feedback? Do they need amplified volume?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cognitive/Language Skills</strong></td>
+                        <td>Does your child understand pictures? Words? How many choices can they handle at once?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Communication Goals</strong></td>
+                        <td>What does your child need to communicate about? Needs? Wants? Stories? Academic content?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Environment</strong></td>
+                        <td>Where will the device be used? Home? School? Community? Outdoors?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Portability</strong></td>
+                        <td>Does your child need to carry it? Will it be mounted on a wheelchair?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Durability</strong></td>
+                        <td>Will the device be dropped? Exposed to liquids? Used roughly?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cost</strong></td>
+                        <td>What can you afford? Will insurance cover it? Can the school provide it?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Partner Training</strong></td>
+                        <td>How much training will family/staff need? How complex is the system?</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>Vocabulary Organization Systems</h2>
+            <p>Beyond the device itself, how vocabulary is organized matters. Common systems include:</p>
+            
+            <h3>Core Vocabulary</h3>
+            <p>Focuses on high-frequency words (go, want, like, more, stop) that can be combined to say many things. Core words make up 80% of what we say.</p>
+            <p><strong>Examples:</strong> TouchChat with WordPower, Proloquo2Go Crescendo</p>
+            
+            <h3>Semantic-Syntactic (Category-Based)</h3>
+            <p>Organizes words by category (people, places, actions, descriptions). User navigates through categories to find words.</p>
+            <p><strong>Examples:</strong> Proloquo2Go, Gateway (in TouchChat)</p>
+            
+            <h3>Motor Planning (LAMP, Unity)</h3>
+            <p>Icons are always in the same location. User learns consistent motor patterns to access words, similar to typing.</p>
+            <p><strong>Examples:</strong> LAMP Words for Life, Unity in TouchChat, PRC Accent with Unity</p>
+            
+            <div class="tip-box">
+                <h3>There's No Wrong Choice</h3>
+                <p>The "best" system is the one your child will actually use. Many AAC users try several systems before finding what works. Skills learned on one system transfer to others. Starting with something is better than waiting for the perfect option.</p>
+            </div>
+            
+            <h2>Common Questions</h2>
+            
+            <h3>Should I start with low-tech or high-tech?</h3>
+            <p>You don't have to choose one or the other. Many families use both. Low-tech options can be used right away while you're working on getting a high-tech device. Even after getting a high-tech device, low-tech options are useful backups.</p>
+            
+            <h3>What if we choose the wrong device?</h3>
+            <p>There's no "wrong" device. Your child will learn communication skills that transfer across systems. If a device isn't working, you can try something else. Trial periods exist for exactly this reason.</p>
+            
+            <h3>Should I get an iPad or a dedicated device?</h3>
+            <p>Both have pros and cons. iPads are cheaper, more socially acceptable, and multi-purpose. Dedicated devices are more durable, have better speakers, and may be covered by insurance. Many families start with an iPad and transition to a dedicated device later if needed.</p>
+            
+            <h3>How many words should the device have?</h3>
+            <p>Your child's device should have room to grow. Even if they're only using 10-20 words now, the system should be able to expand to hundreds or thousands of words as their skills develop. Don't limit their future potential with a device that's too simple.</p>
+            
+            <h3>What if my child doesn't like the device we chose?</h3>
+            <p>Resistance is common at first. Give it time. Make sure adults are modeling use of the device. If after several months your child still isn't using it, reassess with your SLP. The issue might be how it's being taught, not the device itself.</p>
+            
+            <h2>Next Steps</h2>
+            <p>Once you have an idea of what type of device might work for your child, move on to:</p>
+            <ul>
+                <li><a href="funding.html">Funding & Insurance</a> - Learn how to get the device paid for</li>
+                <li><a href="implementation.html">Implementation</a> - Understand how to support your child in using AAC</li>
+                <li><a href="resources.html">Resources</a> - Find AAC companies and trial programs</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>AAC Parent Resource Guide | Created as an educational resource for families navigating AAC</p>
+        <p>Inspired by Schuyler's Monster by Robert Rummel-Hudson</p>
+    </footer>
+</body>
+</html>
