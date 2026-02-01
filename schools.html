@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Schools - AAC Parent Resource Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        nav {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            background-color: #667eea;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .content h2 {
+            color: #667eea;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .content h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .content p {
+            margin-bottom: 1rem;
+        }
+        
+        .content ul, .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .law-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .law-box h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        .tip-box {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .tip-box h3 {
+            color: #155724;
+            margin-top: 0;
+        }
+        
+        .warning-box {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .warning-box h3 {
+            color: #721c24;
+            margin-top: 0;
+        }
+        
+        .checklist {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin: 1.5rem 0;
+        }
+        
+        .checklist h3 {
+            margin-top: 0;
+        }
+        
+        .checklist ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .checklist li::before {
+            content: "☐ ";
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+        
+        .goal-example {
+            background-color: #e7f3ff;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            border-left: 3px solid #2196F3;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Working with Schools</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="understanding.html">Understanding AAC</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li><a href="devices.html">Device Selection</a></li>
+            <li><a href="funding.html">Funding & Insurance</a></li>
+            <li><a href="implementation.html">Implementation</a></li>
+            <li><a href="schools.html">Working with Schools</a></li>
+            <li><a href="troubleshooting.html">Troubleshooting</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <h2>AAC in the School Setting</h2>
+            <p>School is where your child spends most of their day. Ensuring they have access to AAC at school is critical for learning, socializing, and participating in activities. This page helps you advocate for appropriate AAC support in your child's IEP.</p>
+            
+            <div class="law-box">
+                <h3>Legal Rights</h3>
+                <p>Under IDEA, schools must provide assistive technology (including AAC) if it's required for your child to receive a free appropriate public education (FAPE). AAC should be:</p>
+                <ul>
+                    <li>Considered for every student with communication needs</li>
+                    <li>Available across all school settings (classroom, lunch, recess, specials)</li>
+                    <li>Listed as an accommodation in the IEP</li>
+                    <li>Supported with appropriate goals and services</li>
+                </ul>
+            </div>
+            
+            <h2>AAC in the IEP</h2>
+            
+            <h3>Where AAC Should Appear in the IEP:</h3>
+            
+            <h4>1. Present Levels of Academic and Functional Performance (PLAAFP)</h4>
+            <p>This section should describe:</p>
+            <ul>
+                <li>Your child's current communication abilities</li>
+                <li>What AAC system(s) they use</li>
+                <li>How they're currently using AAC (what words, for what purposes)</li>
+                <li>Strengths and areas of need related to communication</li>
+            </ul>
+            
+            <h4>2. Accommodations</h4>
+            <p>AAC must be listed as an accommodation, ensuring access across all settings and activities.</p>
+            
+            <div class="goal-example">
+                <strong>Example Accommodation:</strong>
+                <p>"[Student] will have access to their speech-generating device at all times during the school day, including during instruction, transitions, lunch, recess, and all school activities. Staff will ensure the device is charged, available, and within reach."</p>
+            </div>
+            
+            <h4>3. Annual Goals</h4>
+            <p>Goals should address both AAC skills AND language/communication skills using AAC.</p>
+            
+            <div class="goal-example">
+                <strong>Example Goals:</strong>
+                <ul>
+                    <li>"[Student] will use AAC to request desired items or activities in 8 out of 10 opportunities across settings."</li>
+                    <li>"[Student] will navigate to 3 different pages on their AAC device to locate target vocabulary with 80% accuracy."</li>
+                    <li>"[Student] will use AAC to answer yes/no questions in 4 out of 5 opportunities."</li>
+                    <li>"[Student] will use AAC to make comments (not just requests) in 3 out of 5 opportunities during structured activities."</li>
+                    <li>"[Student] will combine 2-3 words on their AAC device to create simple sentences in 70% of communication attempts."</li>
+                </ul>
+            </div>
+            
+            <h4>4. Services</h4>
+            <p>Specify who will support AAC implementation and how often:</p>
+            <ul>
+                <li>Speech therapy (individual and/or push-in to classroom)</li>
+                <li>Special education teacher support</li>
+                <li>Paraeducator training and support</li>
+                <li>Consultation with AAC specialist</li>
+            </ul>
+            
+            <h4>5. Supplementary Aids and Services</h4>
+            <p>This section should include:</p>
+            <ul>
+                <li>Training for staff on the AAC device</li>
+                <li>Visual supports to accompany AAC use</li>
+                <li>Peer training or awareness</li>
+                <li>Low-tech backup systems</li>
+            </ul>
+            
+            <h2>Key Questions for IEP Meetings</h2>
+            
+            <div class="checklist">
+                <h3>Ask These Questions:</h3>
+                <ul>
+                    <li>Is AAC listed as an accommodation in all settings?</li>
+                    <li>Who is responsible for ensuring the device is charged?</li>
+                    <li>Who is responsible for programming new vocabulary?</li>
+                    <li>What training will staff receive on the device?</li>
+                    <li>How will staff model using the device?</li>
+                    <li>Will my child have access to AAC during all activities, including lunch, recess, and specials?</li>
+                    <li>What happens if the device breaks or is lost?</li>
+                    <li>Can the device come home daily, or does it stay at school?</li>
+                    <li>How will progress be tracked and shared with me?</li>
+                    <li>What is the plan for generalizing AAC use across settings?</li>
+                </ul>
+            </div>
+            
+            <h2>Common School Challenges and How to Address Them</h2>
+            
+            <h3>Challenge: "The device stays in the speech room."</h3>
+            <div class="warning-box">
+                <h3>Why This is a Problem</h3>
+                <p>AAC is not just for speech therapy. It's how your child communicates. Limiting access to therapy sessions is like only allowing your child to speak during speech therapy.</p>
+            </div>
+            
+            <p><strong>Solution:</strong> Advocate for AAC to be listed as an accommodation across all settings. The IEP should explicitly state the device goes with the student throughout the school day.</p>
+            
+            <h3>Challenge: "The teacher is worried about the device being a distraction."</h3>
+            <div class="warning-box">
+                <h3>Why This is a Problem</h3>
+                <p>Would we take away a speaking child's voice because they might talk at inappropriate times? No. We teach them when and how to use their voice appropriately.</p>
+            </div>
+            
+            <p><strong>Solution:</strong> The team should focus on teaching appropriate device use, not removing access. This might include goals around turn-taking, waiting, and using AAC for different purposes. Visual supports can help remind students when it's time to listen vs. time to communicate.</p>
+            
+            <h3>Challenge: "The paraeducator doesn't know how to use the device."</h3>
+            <div class="warning-box">
+                <h3>Why This is a Problem</h3>
+                <p>If staff don't know how to use the device, they can't model it, program vocabulary, or support your child effectively.</p>
+            </div>
+            
+            <p><strong>Solution:</strong> Training must be included in the IEP. The SLP or AAC specialist should provide initial training and ongoing support. Request regular check-ins to ensure staff feel confident.</p>
+            
+            <h3>Challenge: "The device isn't charged."</h3>
+            <div class="warning-box">
+                <h3>Why This is a Problem</h3>
+                <p>An uncharged device is useless. This is like forgetting to give a speaking child their voice.</p>
+            </div>
+            
+            <p><strong>Solution:</strong> The IEP should specify who is responsible for charging (often the paraeducator or special education teacher). Establish a routine (charge overnight at school, charge during lunch, etc.). Have a backup low-tech system for when the device dies.</p>
+            
+            <h3>Challenge: "We don't have time to program new vocabulary."</h3>
+            <div class="warning-box">
+                <h3>Why This is a Problem</h3>
+                <p>Without relevant vocabulary, your child can't participate in classroom activities or discussions.</p>
+            </div>
+            
+            <p><strong>Solution:</strong> Designate someone responsible for programming (SLP, special education teacher, or trained paraeducator). This should be part of their job responsibilities, not an "extra" task. Many AAC systems allow for quick customization. Parents can also program vocabulary at home if the device goes between home and school.</p>
+            
+            <h3>Challenge: "My child only uses AAC with adults, not with peers."</h3>
+            <div class="warning-box">
+                <h3>Why This is a Problem</h3>
+                <p>Peer interaction is critical for social development. AAC users need to communicate with peers, not just adults.</p>
+            </div>
+            
+            <p><strong>Solution:</strong> Peers need training too! Brief peer education sessions can teach classmates how to interact with AAC users (give wait time, respond to AAC just like speech, model using the device during play). Structured peer activities with AAC support can build confidence.</p>
+            
+            <h2>Ensuring AAC Access Across School Settings</h2>
+            
+            <h3>Classroom</h3>
+            <ul>
+                <li>Device is charged and within reach</li>
+                <li>Relevant vocabulary is programmed for lessons</li>
+                <li>Teacher models using AAC during instruction</li>
+                <li>Student has opportunities to use AAC to answer questions, participate in discussions</li>
+                <li>Visual supports remind staff to model and pause for AAC use</li>
+            </ul>
+            
+            <h3>Lunch</h3>
+            <ul>
+                <li>Device comes to lunch</li>
+                <li>Vocabulary includes food names, social language ("What did you do?"), preferences</li>
+                <li>Lunch staff or peers model AAC use</li>
+                <li>Student can request items, make choices, engage in conversation</li>
+            </ul>
+            
+            <h3>Recess</h3>
+            <ul>
+                <li>Device is durable enough for outdoor use OR low-tech backup is available</li>
+                <li>Vocabulary includes play actions ("my turn," "push," "swing," "chase")</li>
+                <li>Staff or peers facilitate AAC use during games</li>
+                <li>Student can initiate play, take turns, negotiate</li>
+            </ul>
+            
+            <h3>Specials (PE, Music, Art, Library)</h3>
+            <ul>
+                <li>Device travels with the student</li>
+                <li>Specials teachers receive training on the device</li>
+                <li>Vocabulary is customized for each class</li>
+                <li>Student can participate in activities using AAC</li>
+            </ul>
+            
+            <h3>Transitions</h3>
+            <ul>
+                <li>Device is accessible during transitions</li>
+                <li>Visual schedules paired with AAC vocabulary</li>
+                <li>Staff model transition language ("time to go," "line up," "get backpack")</li>
+            </ul>
+            
+            <h2>Training School Staff</h2>
+            
+            <h3>Who Needs Training?</h3>
+            <ul>
+                <li>Special education teacher</li>
+                <li>General education teacher(s)</li>
+                <li>Paraeducators</li>
+                <li>Speech-language pathologist</li>
+                <li>Related service providers (OT, PT, adaptive PE)</li>
+                <li>Specials teachers (art, music, PE, library)</li>
+                <li>Lunch supervisors</li>
+                <li>Recess supervisors</li>
+                <li>Bus driver/monitor (if applicable)</li>
+                <li>Office staff</li>
+            </ul>
+            
+            <h3>What Training Should Cover:</h3>
+            <ul>
+                <li>How to operate the device (turning on, navigating, volume)</li>
+                <li>Where vocabulary is located</li>
+                <li>How to model using the device</li>
+                <li>Importance of wait time</li>
+                <li>How to honor all communication (not just AAC)</li>
+                <li>How to create communication opportunities</li>
+                <li>Troubleshooting basics (device won't turn on, sound issues)</li>
+                <li>Who to contact for programming or technical issues</li>
+            </ul>
+            
+            <div class="tip-box">
+                <h3>Request Ongoing Training</h3>
+                <p>One training session isn't enough. Request follow-up sessions, coaching in the classroom, and check-ins throughout the year. Staff need ongoing support to feel confident with AAC.</p>
+            </div>
+            
+            <h2>Home-School Communication</h2>
+            
+            <p>Regular communication between home and school ensures consistency in AAC implementation.</p>
+            
+            <h3>What to Share with School:</h3>
+            <ul>
+                <li>New words your child is using at home</li>
+                <li>Successful strategies you're using</li>
+                <li>Topics your child is interested in (for vocabulary programming)</li>
+                <li>Changes in your child's AAC skills</li>
+            </ul>
+            
+            <h3>What to Ask School:</h3>
+            <ul>
+                <li>How is my child using AAC at school?</li>
+                <li>What new vocabulary has been added?</li>
+                <li>Are there any technical issues with the device?</li>
+                <li>What upcoming units/activities should we program vocabulary for?</li>
+                <li>How are peers responding to the AAC device?</li>
+            </ul>
+            
+            <h3>Communication Methods:</h3>
+            <ul>
+                <li>Daily communication log</li>
+                <li>Weekly email updates</li>
+                <li>AAC data tracking shared between home and school</li>
+                <li>Monthly check-in meetings</li>
+                <li>Videos of AAC use shared both directions</li>
+            </ul>
+            
+            <h2>When Things Aren't Working</h2>
+            
+            <p>If your child's AAC needs aren't being met at school, here are your options:</p>
+            
+            <ol>
+                <li><strong>Request an IEP meeting</strong> to address concerns</li>
+                <li><strong>Document everything</strong> (emails, notes, observations)</li>
+                <li><strong>Bring data</strong> showing lack of progress or access issues</li>
+                <li><strong>Request an independent AAC evaluation</strong> if you disagree with the school's assessment</li>
+                <li><strong>File a complaint</strong> with the state department of education if rights are being violated</li>
+                <li><strong>Consider mediation</strong> to resolve disputes</li>
+                <li><strong>Consult a special education advocate or attorney</strong> if needed</li>
+            </ol>
+            
+            <div class="tip-box">
+                <h3>Document Everything</h3>
+                <p>Keep records of all communication with the school. Take notes during meetings. Follow up verbal conversations with emails summarizing what was discussed. Documentation is critical if you need to advocate more formally.</p>
+            </div>
+            
+            <h2>Remember</h2>
+            <p>You are your child's best advocate. Schools have legal obligations to provide AAC access, but you may need to push to ensure those obligations are met. Stay informed about your rights, ask questions, and don't accept "no" when your child's communication is at stake.</p>
+            
+            <p>Your child deserves to have a voice at school, just like every other student.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>AAC Parent Resource Guide | Created as an educational resource for families navigating AAC</p>
+        <p>Inspired by Schuyler's Monster by Robert Rummel-Hudson</p>
+    </footer>
+</body>
+</html>
