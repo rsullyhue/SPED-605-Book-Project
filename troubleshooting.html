@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting - AAC Parent Resource Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        nav {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            background-color: #667eea;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .content h2 {
+            color: #667eea;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .content h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .content p {
+            margin-bottom: 1rem;
+        }
+        
+        .content ul, .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .problem-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .problem-box h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        .solution-box {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 1.5rem;
+            margin: 0 0 1.5rem 0;
+        }
+        
+        .solution-box h4 {
+            color: #155724;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tip-box {
+            background-color: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .tip-box h3 {
+            color: #1976D2;
+            margin-top: 0;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Troubleshooting Common AAC Challenges</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="understanding.html">Understanding AAC</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li><a href="devices.html">Device Selection</a></li>
+            <li><a href="funding.html">Funding & Insurance</a></li>
+            <li><a href="implementation.html">Implementation</a></li>
+            <li><a href="schools.html">Working with Schools</a></li>
+            <li><a href="troubleshooting.html">Troubleshooting</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <h2>Common AAC Challenges and Solutions</h2>
+            <p>Every family faces challenges when implementing AAC. You're not alone, and most problems have solutions. This page addresses the most common issues and what to do about them.</p>
+            
+            <h2>Device and Technical Issues</h2>
+            
+            <div class="problem-box">
+                <h3>Problem: The device isn't charged</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Establish a charging routine (charge overnight in a specific location)</li>
+                    <li>Set phone reminders to check battery</li>
+                    <li>Get a portable charger for on-the-go</li>
+                    <li>Keep charging cables in multiple locations (home, car, school)</li>
+                    <li>Have a low-tech backup system for when the device dies</li>
+                    <li>Check battery health (older devices may need battery replacement)</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: The device is lost or left at school/home</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Use a brightly colored case to make the device easier to spot</li>
+                    <li>Attach the device to a strap or lanyard</li>
+                    <li>Establish a routine (device always goes in backpack at end of day)</li>
+                    <li>Have low-tech backup systems at both home and school</li>
+                    <li>If possible, have two devices (one for home, one for school)</li>
+                    <li>Use "Find My" features if the device supports it</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: The device broke</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Check if the device is under warranty</li>
+                    <li>Contact the manufacturer or vendor for repairs</li>
+                    <li>Use a protective case to prevent future damage</li>
+                    <li>Have insurance or a protection plan for expensive devices</li>
+                    <li>Immediately implement low-tech backup communication</li>
+                    <li>Document the damage if it happened at school (may be their responsibility to replace)</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: No sound is coming out</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Check volume settings (might be muted or too low)</li>
+                    <li>Check if headphones are plugged in (sound won't play through speakers)</li>
+                    <li>Restart the device</li>
+                    <li>Check app settings for volume controls</li>
+                    <li>For dedicated devices, check hardware volume buttons</li>
+                    <li>Contact technical support if issue persists</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: The app keeps crashing or freezing</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Close the app completely and reopen it</li>
+                    <li>Restart the device</li>
+                    <li>Check for app updates</li>
+                    <li>Check for device software updates</li>
+                    <li>Free up storage space (delete unused apps, photos)</li>
+                    <li>Uninstall and reinstall the app (backup data first!)</li>
+                    <li>Contact app support with details about the issue</li>
+                </ul>
+            </div>
+            
+            <h2>User Engagement Issues</h2>
+            
+            <div class="problem-box">
+                <h3>Problem: My child won't use the device</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Model, model, model! Use the device yourself constantly</li>
+                    <li>Stop pressuring them to use it (pressure creates resistance)</li>
+                    <li>Make sure the device is always available and accessible</li>
+                    <li>Program highly motivating vocabulary (favorite foods, toys, activities)</li>
+                    <li>Use the device to give them things they want (model the word, then give the item)</li>
+                    <li>Give it time (some kids take months to start using AAC)</li>
+                    <li>Consider whether the device is a good fit (motor access, vocabulary organization)</li>
+                    <li>Ensure they understand how to use it (may need more explicit teaching)</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: My child only presses buttons randomly</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>This is exploration! It's a normal stage</li>
+                    <li>Respond to their button presses ("Oh, you said COOKIE! Here's a cookie." Even if it was random)</li>
+                    <li>Keep modeling purposeful use</li>
+                    <li>Play AAC games (press all the animal sounds, find all the food words)</li>
+                    <li>Give it time - purposeful use emerges from exploration</li>
+                    <li>Program motivating vocabulary to increase purposeful use</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: My child only uses the device to request things</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>This is normal! Requesting is usually the first communication function</li>
+                    <li>Model commenting ("I SEE a dog!" "That's COOL!" "Uh OH!")</li>
+                    <li>Model answering questions ("What do you want?" Model "I WANT COOKIE")</li>
+                    <li>Model protesting ("NO!" "STOP!" "ALL DONE!")</li>
+                    <li>Respond enthusiastically to ANY non-requesting communication</li>
+                    <li>Be patient - other functions develop over time</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: My child presses the same word over and over</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>They may be practicing! Respond to it positively</li>
+                    <li>They may really want that thing (honor the communication)</li>
+                    <li>Model expanding the message ("MORE COOKIE? Okay!")</li>
+                    <li>Offer choices to encourage use of other words</li>
+                    <li>If it's truly perseverative, redirect gently and model other words</li>
+                    <li>Ensure there's a variety of motivating vocabulary available</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: My child prefers gestures/pulling me over using AAC</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Honor the gesture AND model the AAC word</li>
+                    <li>Don't withhold until they use AAC (this creates frustration)</li>
+                    <li>Make AAC as efficient as gestures (quick access to core words)</li>
+                    <li>Model that AAC gets results just like gestures do</li>
+                    <li>Be patient - many AAC users continue using gestures alongside AAC</li>
+                    <li>Use a combination of modalities (multimodal communication is normal!)</li>
+                </ul>
+            </div>
+            
+            <h2>Implementation Issues</h2>
+            
+            <div class="problem-box">
+                <h3>Problem: I don't have time to model all day</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Start small (pick 2-3 routines to focus on modeling)</li>
+                    <li>Model during natural activities, not separate "AAC time"</li>
+                    <li>Focus on core words you can use repeatedly</li>
+                    <li>Even a little modeling is better than none</li>
+                    <li>Get other family members to help with modeling</li>
+                    <li>Remember: you don't talk to your child 100% of the time. You don't need to model 100% of the time either.</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: I don't know where words are on the device</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Explore the device when your child isn't around</li>
+                    <li>Make a cheat sheet of common word locations</li>
+                    <li>Ask the SLP for a guided tour of the vocabulary</li>
+                    <li>Watch tutorial videos from the app company</li>
+                    <li>Start with core words in consistent locations</li>
+                    <li>It's okay to search for words! Modeling the search process is helpful too</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: Family members won't use/support the device</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Show them videos of your child using AAC successfully</li>
+                    <li>Share research about AAC benefits</li>
+                    <li>Have them attend an SLP session to see modeling in action</li>
+                    <li>Start with teaching just a few core words</li>
+                    <li>Be patient - some people need time to adjust</li>
+                    <li>Focus on people who are willing and bring others along slowly</li>
+                    <li>Share this website with them!</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: School staff aren't supporting AAC</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Request an IEP meeting to address concerns</li>
+                    <li>Ensure AAC is listed as an accommodation in all settings</li>
+                    <li>Request training for all staff</li>
+                    <li>Share videos of your child using AAC at home</li>
+                    <li>Ask for coaching/consultation from an AAC specialist</li>
+                    <li>Document instances when device isn't available</li>
+                    <li>See the <a href="schools.html">Working with Schools</a> page for more details</li>
+                </ul>
+            </div>
+            
+            <h2>Vocabulary and Programming Issues</h2>
+            
+            <div class="problem-box">
+                <h3>Problem: My child needs vocabulary that isn't on the device</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Learn how to add custom vocabulary (ask SLP for help)</li>
+                    <li>Many AAC systems have tutorial videos on customization</li>
+                    <li>Add words as needs arise (don't wait for "perfect" programming)</li>
+                    <li>Use core words to talk about new topics until you can add specific vocabulary</li>
+                    <li>Coordinate with school so programming happens on both ends</li>
+                    <li>Some AAC systems have symbol libraries you can search</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: The vocabulary is too complex/simple for my child</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Many AAC systems have different vocabulary levels</li>
+                    <li>Consult with your SLP about switching vocabulary organization</li>
+                    <li>You may need to try a different AAC app/system</li>
+                    <li>Customize vocabulary to match your child's level</li>
+                    <li>Remember vocabulary should be challenging enough to support growth</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: My child can't find words on the device</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Motor planning takes time - keep vocabulary in consistent locations</li>
+                    <li>Model, model, model to teach word locations</li>
+                    <li>Create visual guides showing where common words are</li>
+                    <li>Consider a different vocabulary organization system</li>
+                    <li>Reduce grid size if too overwhelming</li>
+                    <li>Use categorization strategies (all food together, all actions together)</li>
+                    <li>Give wait time - searching is part of learning</li>
+                </ul>
+            </div>
+            
+            <h2>Social Issues</h2>
+            
+            <div class="problem-box">
+                <h3>Problem: Peers don't understand/respond to the AAC device</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Brief peer education (show how the device works, practice responding)</li>
+                    <li>Coach peers to wait for AAC responses</li>
+                    <li>Facilitate structured peer activities with AAC support</li>
+                    <li>Model interacting with the AAC user naturally</li>
+                    <li>Praise peers when they interact appropriately</li>
+                    <li>Request school implement peer training program</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: My child is self-conscious about using AAC in public</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Normalize AAC (talk openly about it being their voice)</li>
+                    <li>Connect with other AAC users (online or in-person)</li>
+                    <li>Model confidence when using AAC in public</li>
+                    <li>Let them see positive examples of adult AAC users</li>
+                    <li>Validate their feelings while emphasizing the importance of communication</li>
+                    <li>Consider whether device appearance matters (sometimes tablets are more socially acceptable than dedicated SGDs)</li>
+                    <li>Work with a therapist if self-consciousness is significantly impacting use</li>
+                </ul>
+            </div>
+            
+            <h2>Behavioral Issues</h2>
+            
+            <div class="problem-box">
+                <h3>Problem: My child throws or hits the device</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Get a heavy-duty protective case immediately</li>
+                    <li>Teach a replacement behavior (push away, sign "break", hit a pillow)</li>
+                    <li>Address the underlying cause (frustration? attention? escape?)</li>
+                    <li>Consider whether they have vocabulary to express frustration</li>
+                    <li>Ensure they have ways to say "no," "stop," "break," "help"</li>
+                    <li>Work with BCBA or behavior specialist if this is a pattern</li>
+                    <li>Have a backup device or low-tech system if device is damaged</li>
+                </ul>
+            </div>
+            
+            <div class="problem-box">
+                <h3>Problem: My child only wants to play games/watch videos on the device</h3>
+            </div>
+            <div class="solution-box">
+                <h4>Solutions:</h4>
+                <ul>
+                    <li>Set up parental controls to limit access to non-communication apps</li>
+                    <li>Use Guided Access (iOS) to lock into the AAC app</li>
+                    <li>Make communication more motivating than games</li>
+                    <li>Use games as rewards for communication attempts</li>
+                    <li>Consider getting a separate device for entertainment</li>
+                    <li>For dedicated SGDs, ensure entertainment apps aren't installed</li>
+                </ul>
+            </div>
+            
+            <h2>When to Seek Additional Help</h2>
+            
+            <p>Sometimes troubleshooting requires professional support. Consider reaching out if:</p>
+            <ul>
+                <li>Your child shows no progress after 6+ months of consistent implementation</li>
+                <li>You've tried multiple AAC systems and none seem to work</li>
+                <li>Motor or vision issues are preventing access to the device</li>
+                <li>Behavior issues are preventing AAC use</li>
+                <li>School is not complying with IEP requirements</li>
+                <li>You feel overwhelmed and don't know where to start</li>
+            </ul>
+            
+            <div class="tip-box">
+                <h3>Resources for Help</h3>
+                <ul>
+                    <li>Your child's SLP (request additional consultation)</li>
+                    <li>AAC specialist or consultant</li>
+                    <li>Assistive technology specialist</li>
+                    <li>Online AAC parent support groups</li>
+                    <li>AAC app company customer support</li>
+                    <li>Device vendor technical support</li>
+                    <li>Special education advocate</li>
+                </ul>
+            </div>
+            
+            <h2>Remember</h2>
+            <p>Every AAC journey has bumps along the way. Challenges are normal and expected. Most issues have solutions, and with persistence and support, you'll figure it out. Don't give up on AAC because of temporary obstacles.</p>
+            
+            <p>Your child deserves a voice, and you're doing great by advocating for them.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>AAC Parent Resource Guide | Created as an educational resource for families navigating AAC</p>
+        <p>Inspired by Schuyler's Monster by Robert Rummel-Hudson</p>
+    </footer>
+</body>
+</html>
