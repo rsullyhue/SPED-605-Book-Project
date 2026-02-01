@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAC Parent Resource Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            background-color: #667eea;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .hero {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .hero h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .card a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        
+        .card a:hover {
+            background: #764ba2;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AAC Parent Resource Guide</h1>
+        <p>Navigating Augmentative and Alternative Communication for Your Child</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="understanding.html">Understanding AAC</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li><a href="devices.html">Device Selection</a></li>
+            <li><a href="funding.html">Funding & Insurance</a></li>
+            <li><a href="implementation.html">Implementation</a></li>
+            <li><a href="schools.html">Working with Schools</a></li>
+            <li><a href="troubleshooting.html">Troubleshooting</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="hero">
+            <h2>Welcome</h2>
+            <p>Finding out your child needs Augmentative and Alternative Communication (AAC) can feel overwhelming. You're probably wondering where to start, what device to choose, how to pay for it, and whether your child will actually use it.</p>
+            <p>This guide was created to help parents navigate the AAC journey. Whether you're just beginning to explore AAC or you're already in the thick of implementation, you'll find practical information, real strategies, and answers to common questions.</p>
+            <p><strong>You are not alone in this.</strong> Thousands of families have walked this path before you, and many have found that AAC opened up a whole new world of communication for their child.</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <h3>Understanding AAC</h3>
+                <p>Learn what AAC is, who it helps, and why it matters. Dispel common myths and understand the basics.</p>
+                <a href="understanding.html">Learn More →</a>
+            </div>
+            
+            <div class="card">
+                <h3>Getting Started</h3>
+                <p>Navigate the assessment process, work with SLPs, and understand IEP considerations.</p>
+                <a href="getting-started.html">Learn More →</a>
+            </div>
+            
+            <div class="card">
+                <h3>Device Selection</h3>
+                <p>Explore types of AAC from low-tech to high-tech, and learn how to choose what's right for your child.</p>
+                <a href="devices.html">Learn More →</a>
+            </div>
+            
+            <div class="card">
+                <h3>Funding & Insurance</h3>
+                <p>Get devices covered by insurance, write letters of medical necessity, and navigate the appeals process.</p>
+                <a href="funding.html">Learn More →</a>
+            </div>
+            
+            <div class="card">
+                <h3>Implementation at Home</h3>
+                <p>Learn modeling techniques, core vocabulary, and aided language input strategies.</p>
+                <a href="implementation.html">Learn More →</a>
+            </div>
+            
+            <div class="card">
+                <h3>Working with Schools</h3>
+                <p>Ensure your child has access to their device at school and get appropriate IEP goals.</p>
+                <a href="schools.html">Learn More →</a>
+            </div>
+            
+            <div class="card">
+                <h3>Troubleshooting</h3>
+                <p>Address common challenges like devices not being charged, limited vocabulary, and resistance to use.</p>
+                <a href="troubleshooting.html">Learn More →</a>
+            </div>
+            
+            <div class="card">
+                <h3>Resources</h3>
+                <p>Find AAC companies, parent support groups, research articles, and helpful organizations.</p>
+                <a href="resources.html">Learn More →</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>AAC Parent Resource Guide | Created as an educational resource for families navigating AAC</p>
+        <p>Inspired by Schuyler's Monster by Robert Rummel-Hudson</p>
+    </footer>
+</body>
+</html>
