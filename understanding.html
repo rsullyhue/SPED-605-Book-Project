@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding AAC - AAC Parent Resource Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        nav {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            background-color: #667eea;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .content h2 {
+            color: #667eea;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .content h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .content p {
+            margin-bottom: 1rem;
+        }
+        
+        .content ul, .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .myth-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .myth-box h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        .truth-box {
+            background-color: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .truth-box h3 {
+            color: #0c5460;
+            margin-top: 0;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding AAC</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="understanding.html">Understanding AAC</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li><a href="devices.html">Device Selection</a></li>
+            <li><a href="funding.html">Funding & Insurance</a></li>
+            <li><a href="implementation.html">Implementation</a></li>
+            <li><a href="schools.html">Working with Schools</a></li>
+            <li><a href="troubleshooting.html">Troubleshooting</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <h2>What is AAC?</h2>
+            <p>Augmentative and Alternative Communication (AAC) includes all forms of communication that supplement or replace spoken language. This can range from simple picture boards to sophisticated speech-generating devices.</p>
+            
+            <p><strong>Augmentative</strong> means it adds to or supports existing speech. <strong>Alternative</strong> means it replaces speech entirely when speaking is not possible.</p>
+            
+            <h2>Who Uses AAC?</h2>
+            <p>AAC is used by people of all ages who have difficulty speaking or being understood. This includes people with:</p>
+            <ul>
+                <li>Autism spectrum disorder</li>
+                <li>Cerebral palsy</li>
+                <li>Intellectual disabilities</li>
+                <li>Apraxia of speech</li>
+                <li>Stroke or traumatic brain injury</li>
+                <li>ALS or other degenerative conditions</li>
+                <li>Temporary conditions (after surgery, intubation, etc.)</li>
+            </ul>
+            
+            <h2>Types of AAC</h2>
+            
+            <h3>Unaided AAC</h3>
+            <p>Communication that doesn't require any external tools:</p>
+            <ul>
+                <li>Gestures and body language</li>
+                <li>Facial expressions</li>
+                <li>Sign language</li>
+                <li>Vocalizations</li>
+            </ul>
+            
+            <h3>Aided AAC</h3>
+            <p>Communication that uses external tools or devices:</p>
+            <ul>
+                <li><strong>Low-tech:</strong> Picture boards, communication books, pointing to letters</li>
+                <li><strong>Mid-tech:</strong> Single-message voice output devices, simple communication boards with voice output</li>
+                <li><strong>High-tech:</strong> Speech-generating devices (SGDs), tablets with AAC apps, eye-gaze systems</li>
+            </ul>
+            
+            <h2>Common Myths About AAC</h2>
+            
+            <div class="myth-box">
+                <h3>Myth: AAC will prevent my child from learning to talk</h3>
+            </div>
+            <div class="truth-box">
+                <h3>Truth: Research shows AAC actually supports speech development</h3>
+                <p>Using AAC gives children a way to communicate while they're developing speech. Studies consistently show that AAC does not hinder speech development and often helps it. Many children who use AAC also develop some spoken words over time.</p>
+            </div>
+            
+            <div class="myth-box">
+                <h3>Myth: My child needs to try everything else first before AAC</h3>
+            </div>
+            <div class="truth-box">
+                <h3>Truth: Waiting to introduce AAC denies your child communication</h3>
+                <p>There are no prerequisites for AAC. Children don't need to "fail" at speech therapy first. Early access to AAC gives children a way to communicate their needs, participate in learning, and develop language skills while other interventions continue.</p>
+            </div>
+            
+            <div class="myth-box">
+                <h3>Myth: AAC is only for people who will never speak</h3>
+            </div>
+            <div class="truth-box">
+                <h3>Truth: AAC supports communication in many situations</h3>
+                <p>Some people use AAC all the time, while others use it only in certain situations (when tired, stressed, or in loud environments). AAC is a tool that can be used as much or as little as needed.</p>
+            </div>
+            
+            <div class="myth-box">
+                <h3>Myth: My child isn't smart enough to use AAC</h3>
+            </div>
+            <div class="truth-box">
+                <h3>Truth: AAC can be adapted for any skill level</h3>
+                <p>AAC systems range from very simple (one or two pictures) to very complex (thousands of words). The system grows with your child. Every person deserves a way to communicate, regardless of cognitive ability.</p>
+            </div>
+            
+            <div class="myth-box">
+                <h3>Myth: AAC is too expensive</h3>
+            </div>
+            <div class="truth-box">
+                <h3>Truth: There are AAC options at every price point</h3>
+                <p>While dedicated speech-generating devices can be expensive, many are covered by insurance or school districts. There are also free and low-cost AAC apps available. Don't let cost prevent you from exploring AAC for your child.</p>
+            </div>
+            
+            <h2>Why AAC Matters</h2>
+            <p>Communication is a basic human right. When children can't communicate their needs, wants, thoughts, and feelings, it affects every part of their life:</p>
+            <ul>
+                <li><strong>Learning:</strong> Children need to communicate to participate in education</li>
+                <li><strong>Relationships:</strong> Communication builds connections with family and friends</li>
+                <li><strong>Safety:</strong> Being able to communicate pain, fear, or emergencies is critical</li>
+                <li><strong>Independence:</strong> Communication gives people control over their own lives</li>
+                <li><strong>Mental health:</strong> Frustration from not being understood can lead to anxiety and behavior challenges</li>
+            </ul>
+            
+            <p>AAC gives children a voice. It opens doors to learning, relationships, and independence that might otherwise be closed.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>AAC Parent Resource Guide | Created as an educational resource for families navigating AAC</p>
+        <p>Inspired by Schuyler's Monster by Robert Rummel-Hudson</p>
+    </footer>
+</body>
+</html>
