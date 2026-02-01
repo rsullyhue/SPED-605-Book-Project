@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation at Home - AAC Parent Resource Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        nav {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            background-color: #667eea;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .content h2 {
+            color: #667eea;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .content h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .content p {
+            margin-bottom: 1rem;
+        }
+        
+        .content ul, .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .strategy-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .strategy-box h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .example-box {
+            background-color: #e7f3ff;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+        
+        .tip-box {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .tip-box h3 {
+            color: #155724;
+            margin-top: 0;
+        }
+        
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .warning-box h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        .do-dont {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .do {
+            background-color: #d4edda;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        .do h4 {
+            color: #155724;
+            margin-bottom: 0.5rem;
+        }
+        
+        .dont {
+            background-color: #f8d7da;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        .dont h4 {
+            color: #721c24;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .do-dont {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Implementation at Home</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="understanding.html">Understanding AAC</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li><a href="devices.html">Device Selection</a></li>
+            <li><a href="funding.html">Funding & Insurance</a></li>
+            <li><a href="implementation.html">Implementation</a></li>
+            <li><a href="schools.html">Working with Schools</a></li>
+            <li><a href="troubleshooting.html">Troubleshooting</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <h2>Supporting AAC Use at Home</h2>
+            <p>Getting the device is just the beginning. Implementation is where the real work happens. This page provides practical strategies for supporting your child's AAC use at home.</p>
+            
+            <h2>The Most Important Rule: Model, Model, Model</h2>
+            <p>The single most important thing you can do to support your child's AAC use is to MODEL using the device yourself. This is called Aided Language Input or Aided Language Stimulation.</p>
+            
+            <div class="strategy-box">
+                <h3>What is Modeling?</h3>
+                <p>Modeling means YOU use the AAC device while you talk. You speak naturally with your voice AND point to words on the device at the same time.</p>
+                
+                <div class="example-box">
+                    <strong>Example:</strong> While getting a snack, you say "Do you want MORE?" while pressing the "more" button on the device. Then you say "Want COOKIE?" while pressing "want" and "cookie."
+                </div>
+                
+                <h4>Why Modeling Works:</h4>
+                <ul>
+                    <li>Shows your child HOW to use the device</li>
+                    <li>Demonstrates that AAC is a valid form of communication</li>
+                    <li>Teaches vocabulary location through repetition</li>
+                    <li>Shows how to combine words into sentences</li>
+                    <li>Takes pressure off your child to perform</li>
+                </ul>
+            </div>
+            
+            <div class="warning-box">
+                <h3>Don't Make Your Child "Use Their Words"</h3>
+                <p>Never withhold something until your child uses the device. This creates pressure and frustration. Instead, model the words while you give them what they want. Learning happens through exposure, not forced performance.</p>
+            </div>
+            
+            <h2>Core Vocabulary: The Foundation</h2>
+            <p>Core vocabulary consists of high-frequency words that make up 80% of what we say. These words can be combined to communicate about almost anything.</p>
+            
+            <h3>Examples of Core Words:</h3>
+            <ul>
+                <li><strong>Actions:</strong> go, stop, want, like, need, help, do, make, get, put</li>
+                <li><strong>Descriptors:</strong> more, big, little, good, bad, hot, cold, mine, your</li>
+                <li><strong>Social words:</strong> hi, bye, please, thank you, sorry, love</li>
+                <li><strong>Question words:</strong> what, where, who, when</li>
+                <li><strong>Negation:</strong> no, not, don't</li>
+                <li><strong>Locations:</strong> in, on, up, down, here, there</li>
+            </ul>
+            
+            <div class="tip-box">
+                <h3>Start with 5-10 Core Words</h3>
+                <p>Pick 5-10 core words to focus on and model them consistently throughout the day. Once your child starts using some of these, add more. Core words like "go," "more," "help," "stop," and "want" are great places to start.</p>
+            </div>
+            
+            <h2>Key Implementation Strategies</h2>
+            
+            <div class="strategy-box">
+                <h3>1. Device Access</h3>
+                <p>The device needs to be available ALL THE TIME, not just during structured activities.</p>
+                <ul>
+                    <li>Keep the device charged and within reach</li>
+                    <li>Bring it everywhere (meals, car rides, errands, playtime)</li>
+                    <li>Have it out during routines, not stored away</li>
+                    <li>Consider getting a strap or mounting system for easy access</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <h3>If the Device Isn't Available, Your Child Can't Use It</h3>
+                    <p>Imagine if someone took away your ability to speak during meals, in the car, or while watching TV. Your child needs access to communication at all times, not just when adults remember to get the device out.</p>
+                </div>
+            </div>
+            
+            <div class="strategy-box">
+                <h3>2. Honor All Communication</h3>
+                <p>Your child may use multiple forms of communication: gestures, vocalizations, looking, pulling your hand, AND the device. Honor all of it.</p>
+                <ul>
+                    <li>Respond to gestures, sounds, and eye gaze</li>
+                    <li>Then MODEL the message on the device</li>
+                    <li>Don't force your child to use the device instead of other communication</li>
+                </ul>
+                
+                <div class="example-box">
+                    <strong>Example:</strong> Your child points to the fridge. You say "Oh, you want OPEN!" (model "open" on device). "Let's OPEN the fridge!" (model "open" again). You honor the pointing AND model the AAC word.
+                </div>
+            </div>
+            
+            <div class="strategy-box">
+                <h3>3. Presume Competence</h3>
+                <p>Assume your child understands more than they can express. Talk to them in age-appropriate ways and give them access to robust vocabulary.</p>
+                <ul>
+                    <li>Don't limit vocabulary because you think it's "too hard"</li>
+                    <li>Model sentences, not just single words</li>
+                    <li>Treat them as capable communicators</li>
+                    <li>Give them time to respond (10+ seconds of wait time)</li>
+                </ul>
+            </div>
+            
+            <div class="strategy-box">
+                <h3>4. Follow Your Child's Lead</h3>
+                <p>Comment on what your child is doing, looking at, or interested in. Don't force topics.</p>
+                <ul>
+                    <li>If they're playing with cars, model car-related words</li>
+                    <li>If they're watching TV, model words about what's happening</li>
+                    <li>If they're just hanging out, model simple social words</li>
+                </ul>
+            </div>
+            
+            <div class="strategy-box">
+                <h3>5. Create Communication Opportunities</h3>
+                <p>Set up situations where communication is helpful (but don't force it).</p>
+                <ul>
+                    <li>Put favorite snacks in clear containers they can't open</li>
+                    <li>Pause during favorite songs or videos</li>
+                    <li>Give them a little bit of something they want, so they can request "more"</li>
+                    <li>Offer choices</li>
+                    <li>"Forget" to give them utensils at meals</li>
+                </ul>
+                
+                <div class="example-box">
+                    <strong>Example:</strong> You're blowing bubbles. You blow some, then pause and hold the wand. Model "MORE bubbles? Want MORE?" Wait. If they gesture, reach, or use the device, blow more bubbles. If they don't respond, just blow more bubbles anyway while modeling "MORE!"
+                </div>
+            </div>
+            
+            <h2>Daily Routines for AAC Practice</h2>
+            
+            <h3>Mealtime</h3>
+            <ul>
+                <li>Model "eat," "drink," "more," "done," "yum/yuck"</li>
+                <li>Name foods on the device</li>
+                <li>Offer choices ("want APPLE or BANANA?")</li>
+                <li>Comment on what's happening ("You're EATING. It's HOT.")</li>
+            </ul>
+            
+            <h3>Bath Time</h3>
+            <ul>
+                <li>Model "in," "out," "water," "wash," "wet"</li>
+                <li>Pause and model "go" to turn water on/off</li>
+                <li>Name body parts as you wash</li>
+                <li>Play with toys and model actions ("POUR," "SPLASH")</li>
+            </ul>
+            
+            <h3>Playtime</h3>
+            <ul>
+                <li>Model actions ("GO," "STOP," "PUSH," "THROW")</li>
+                <li>Model toy names and attributes ("BIG truck, LITTLE car")</li>
+                <li>Model social words during play ("MY turn, YOUR turn")</li>
+                <li>Comment on play ("OH NO! Car FELL DOWN.")</li>
+            </ul>
+            
+            <h3>Book Reading</h3>
+            <ul>
+                <li>Model "more" to turn pages</li>
+                <li>Model "look" when pointing to pictures</li>
+                <li>Label pictures on the device</li>
+                <li>Model question words ("WHERE is the dog?")</li>
+            </ul>
+            
+            <h3>Getting Dressed</h3>
+            <ul>
+                <li>Model "on," "off," "in," "out"</li>
+                <li>Name clothing items</li>
+                <li>Offer choices ("SHIRT or SWEATER?")</li>
+                <li>Model "help" if they're struggling</li>
+            </ul>
+            
+            <h2>Do's and Don'ts</h2>
+            
+            <div class="do-dont">
+                <div class="do">
+                    <h4>DO:</h4>
+                    <ul>
+                        <li>Model using the device yourself</li>
+                        <li>Give wait time (10+ seconds)</li>
+                        <li>Respond to ALL communication attempts</li>
+                        <li>Keep the device charged and available</li>
+                        <li>Have fun and be playful</li>
+                        <li>Model during natural activities</li>
+                        <li>Honor gestures AND model AAC</li>
+                        <li>Presume competence</li>
+                    </ul>
+                </div>
+                
+                <div class="dont">
+                    <h4>DON'T:</h4>
+                    <ul>
+                        <li>Quiz your child ("What's this? Say cookie!")</li>
+                        <li>Withhold items until they use the device</li>
+                        <li>Only bring out the device for "speech practice"</li>
+                        <li>Expect immediate results</li>
+                        <li>Limit vocabulary to "simple" words</li>
+                        <li>Force your child to look at the device</li>
+                        <li>Compare progress to other AAC users</li>
+                        <li>Give up if they don't use it right away</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2>What to Expect: The Learning Process</h2>
+            
+            <h3>First Few Weeks:</h3>
+            <ul>
+                <li>Your child may ignore the device</li>
+                <li>They may press buttons randomly</li>
+                <li>They may be more interested in other features (games, videos) than communication</li>
+                <li>You'll feel like you're doing all the work (you are, and that's okay!)</li>
+            </ul>
+            
+            <h3>After 1-3 Months:</h3>
+            <ul>
+                <li>Your child may start pressing buttons to hear the voice</li>
+                <li>They may request highly preferred items</li>
+                <li>They may use 5-10 words somewhat consistently</li>
+                <li>Progress will be slow and inconsistent</li>
+            </ul>
+            
+            <h3>After 6-12 Months:</h3>
+            <ul>
+                <li>Your child may use 20-50+ words</li>
+                <li>They may start combining words</li>
+                <li>They may use AAC for different functions (requesting, commenting, protesting)</li>
+                <li>AAC becomes more automatic and natural</li>
+            </ul>
+            
+            <div class="tip-box">
+                <h3>Every Child's Timeline is Different</h3>
+                <p>Some children start using AAC within weeks. Others take months or even years to become consistent users. Keep modeling. Keep the device available. Progress will happen.</p>
+            </div>
+            
+            <h2>Getting the Whole Family On Board</h2>
+            <p>AAC works best when everyone in the child's life uses it. This includes:</p>
+            <ul>
+                <li>Both parents/caregivers</li>
+                <li>Siblings</li>
+                <li>Grandparents and extended family</li>
+                <li>Babysitters</li>
+                <li>Therapists</li>
+                <li>Teachers</li>
+            </ul>
+            
+            <h3>Tips for Family Buy-In:</h3>
+            <ul>
+                <li>Show them how to model (demonstrate, don't just explain)</li>
+                <li>Start with a few core words everyone can learn</li>
+                <li>Share videos of your child using the device</li>
+                <li>Explain that modeling helps, even if the child doesn't respond yet</li>
+                <li>Be patient with family members who are resistant or forget</li>
+            </ul>
+            
+            <h2>Tracking Progress</h2>
+            <p>Progress with AAC can be hard to see day-to-day. Consider tracking:</p>
+            <ul>
+                <li>How many different words your child uses</li>
+                <li>Whether they're combining words</li>
+                <li>What functions they use AAC for (requesting, commenting, protesting, asking questions)</li>
+                <li>How independently they navigate the device</li>
+                <li>How often they initiate communication</li>
+            </ul>
+            
+            <p>Many AAC apps have built-in data tracking. You can also take short videos every few weeks to see progress over time.</p>
+            
+            <h2>Remember</h2>
+            <p>AAC is a marathon, not a sprint. Your child is learning a completely new way to communicate. It takes time, patience, and lots of modeling. Celebrate small wins. Keep the device available. Model consistently. Trust the process.</p>
+            
+            <p>You've got this.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>AAC Parent Resource Guide | Created as an educational resource for families navigating AAC</p>
+        <p>Inspired by Schuyler's Monster by Robert Rummel-Hudson</p>
+    </footer>
+</body>
+</html>
